@@ -1,0 +1,116 @@
+/*base do projeto*/
+
+:root {
+    --azul: hsl(219, 96%, 62%);
+    --vermelha: #fd0000;
+    --amarela: #FFFF00;
+    --preto: #141414;
+    --cinza: #5f5f5f;
+    --douro: #fdcf006e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelha);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header div a {
+    text-decoration: none;
+    color: #AAA;
+    margin: 10px;
+}
+
+header div a:hover {
+    color: #FFF;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*filme principal*/
+
+.filmedetela {
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, 0.50)100%), url('../img/Aranha/imagemcapa.jpg');
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filmedetela .descricao {
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 200px;
+}
+
+.filmedetela .titulo {
+    font-size: 50px;
+    margin-top: 30%;
+    color: var(--douro);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filmedetela .botao {
+    font-size: 15px;
+    background-color: rgba(255, 254, 254, 0.5);
+    border: none;
+    color: rgb(19, 18, 18);
+    padding: 15px 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: rgb(250, 245, 245);
+    color: #0c0b0b;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+    margin-right: 150px;
+}
+
+.filmedetela .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 8px;
+}
+
+.carrosel-filmes .item {
+    cursor: pointer;
+}
